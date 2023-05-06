@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CurencyC.css">
+    <link rel="stylesheet" href="style.css">
     <title>Currency Converter</title>
 </head>
 <body>
@@ -11,41 +11,26 @@
     <div class="converter">
         <label for="base-currency">Base Currency:</label>
         <select id="base-currency">
-            <option value="USD">USD</option>
-            <option value="MXN">MXN</option>
-            <option value="LKR">LKR</option>
-            <option value="AFN">AFN</option>
-            <option value="ALL">ALL</option>
-            <option value="AMD">AMD</option>
-            <option value="ANG">ANG</option>
-            <option value="AOA">AOA</option>
-            <option value="ARS">ARS</option>
-            <option value="AUD">AUD</option>
-            <option value="AWG">AWG</option>
+
         </select>
+
         <label for="amount">Amount:</label>
         <input type="number" id="amount" value="1" min="0">
+
         <label for="target-currency">Target Currency:</label>
         <select id="target-currency">
-            <option value="USD">USD</option>
-            <option value="MXN">MXN</option>
-            <option value="LKR">LKR</option>
-            <option value="AFN">AFN</option>
-            <option value="ALL">ALL</option>
-            <option value="AMD">AMD</option>
-            <option value="ANG">ANG</option>
-            <option value="AOA">AOA</option>
-            <option value="ARS">ARS</option>
-            <option value="AUD">AUD</option>
-            <option value="AWG">AWG</option>
+
         </select>
+
         <p>Converted Amount: <span id="converted-amount"></span></p>
+
+        <p>Historical Exchange Rate On: <input type="date" id="date" value=""><span id="historical-rates-first"></span></p>
         <button id="historical-rates">View Historical Rates</button>
         <div id="historical-rates-container"></div>
+
         <button id="save-favorite">Save Favorite</button>
         <div id="favorite-currency-pairs"></div>
     </div>
-    <script src="CurrencyC.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
- 
