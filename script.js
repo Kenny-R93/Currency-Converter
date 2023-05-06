@@ -108,24 +108,24 @@ function getHistoricalExchangeRates() {
     }
 
 
-// Function to fetch Exchange Rates from API
-function getExchangeRates() {
-    let from = baseCurrency.value;
-    let to = targetCurrency.value;
-    let amount = currencyAmountInput.value;
-    const url = `https://api.apilayer.com/exchangerates_data/convert?from=${from}&to=${to}&amount=${amount}`;
+// // Function to fetch Exchange Rates from API
+// function getExchangeRates() {
+//     let from = baseCurrency.value;
+//     let to = targetCurrency.value;
+//     let amount = currencyAmountInput.value;
+//     const url = `https://api.apilayer.com/exchangerates_data/convert?from=${from}&to=${to}&amount=${amount}`;
   
-    fetch(url , requestOptions)
-        .then(response => response.json())
-        .then((result) => {
-            if (result.success) {
-            convertedAmount.textContent = result.result.toFixed(2);
-            } else {
-                console.error("Could not Convert Currency", error);
-            }
-        })
-        .catch(error => alert("Error Fetching Exchange Rate Data", error));
-}
+//     fetch(url , requestOptions)
+//         .then(response => response.json())
+//         .then((result) => {
+//             if (result.success) {
+//             convertedAmount.textContent = result.result.toFixed(2);
+//             } else {
+//                 console.error("Could not Convert Currency", error);
+//             }
+//         })
+//         .catch(error => alert("Error Fetching Exchange Rate Data", error));
+// }
 
 
 
